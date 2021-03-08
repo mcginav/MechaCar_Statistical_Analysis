@@ -1,0 +1,6 @@
+library(dplyr)
+f <- file.choose()
+MechaCarChallenge <- read.csv(file=f, check.names = F,stringsAsFactors = F)
+?lm()
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = MechaCarChallenge)
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = MechaCarChallenge))
