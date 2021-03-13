@@ -13,13 +13,13 @@ lot_summary <- MechCar2 %>% group_by(Manufacturing_Lot) %>%  summarize(Mean=mean
 ?t.test()
 
 # t test for all lots
-t.test(MechCar2$PSI,Mean=mean(MechCar2$PSI))
+t.test(MechCar2$PSI,mu=mean(MechCar2$PSI))
 
 # t test for lot 1
-t.test(subset(MechCar2$PSI,MechCar2$Manufacturing_Lot == "Lot1"),Mean=mean(MechCar2$PSI))
+t.test(subset(MechCar2$PSI,MechCar2$Manufacturing_Lot == "Lot1"),mu=mean(MechCar2$PSI))
 
 # t test for lot 2
-t.test(subset(MechCar2$PSI,MechCar2$Manufacturing_Lot == "Lot2"),Mean=mean(MechCar2$PSI))
+t.test(subset(MechCar2$PSI,MechCar2$Manufacturing_Lot == "Lot2"),mu=mean(MechCar2$PSI))
 
 # t test for lot 3
-t.test(subset(MechCar2$PSI,MechCar2$Manufacturing_Lot == "Lot3"),Mean=mean(MechCar2$PSI))
+t.test(subset(MechCar2$PSI,MechCar2$Manufacturing_Lot == "Lot3"),mu=mean(MechCar2$PSI))
