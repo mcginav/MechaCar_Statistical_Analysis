@@ -65,6 +65,7 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 T-tests were used to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 * For all lots, the p-value is 1. Because it is greater than 0.05 it is not significant and the null hypothesis can be accepted.
+
 ![Image t-test all lots](https://github.com/mcginav/MechaCar_Statistical_Analysis/blob/main/t.test_all_lots.PNG)
 
 * For lot 1, the p-value is 1.568e-11. Because it is greater than 0.05 it is not significant and the null hypothesis can be accepted. 
